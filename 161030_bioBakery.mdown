@@ -1,0 +1,31 @@
+# はじめに
+[こちらのマニュアル](https://bitbucket.org/biobakery/biobakery/wiki/biobakery_wiki)を参考に進めていきます。
+
+# 必要なソフトのインストール
+## 1. VirtualBox
+[VirtualBox](https://www.virtualbox.org/)をインストールします。リンク先から.pkgファイルをダウンロードしてダブルクリックします。VirtualBoxは無料の仮想化ソフトです。自分の中にまた別のOS環境を構築することができます。
+
+
+## 2. Vagrant
+[Vagrant](https://www.vagrantup.com/downloads.html)をインストールします。これもリンク先から.pkgファイル -> ダブルクリックでOKです。Vagrantに関してはまったく知りませんでしたのでQiitaから引用します。難しいのですが便利そうなのはよくわかりました。
+
+http://qiita.com/hidekuro/items/fc12344d36d996198e96
+
+> これはなに?
+
+> 仮想マシン(以下 "VM")を動かす仮想化ソフトの超すごいラッパーツール。
+VirtualBoxなどの仮想化ソフトの操作を、ものすごく親切に代行してくれます。
+VMの構成を Vagrantfile というテキストに記述してVagrantに任せることで、ネットワークドライバの設定などを意識すること無く、ホスト環境に依存しない形で整備してもらえます。
+
+> なにに使う?
+
+> ゲストOSがインストールされたVMを整備するのに使います。
+Vagrant Cloud にあらかじめ用意されている「box」というVMイメージを指定してコマンドを実行するだけで、OSインストール済みのVMを作成し、ネットワーク設定やSSH環境の整備までやってくれます。
+また、VMの構成内容を Vagrantfile というテキストファイルとしてコード化できます。
+具体的に何がどう楽になる?
+
+> VMの構成を Vagrantfile に記述して vagrant up コマンドを実行するだけで、すぐに完全な環境を整備できます。
+VirtualBoxでVMを作って、GuestAdditionsを入れて、ゲストOSをダウンロード&インストールして、sshdを立てて、SSHでログインして、ミドルウェアを入れて…といった大変な作業がバッサリカットできます。
+
+# bioBakeryをダウンロードして開く
+[コチラ](https://bitbucket.org/biobakery/biobakery/downloads/biobakery-v1.5.tar.gz)からダウンロードします。.tar.gzファイルを開くとフォルダの中にMacOSの場合は"start_biobakery.command"というファイルがありますので、これをterminalから開きます。するとインストールが始まりますが、かなり時間がかかるので心して行って下さい。6GBくらいの容量の余裕があった方がいいと思われます。

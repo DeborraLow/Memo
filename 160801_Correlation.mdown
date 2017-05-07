@@ -1,0 +1,43 @@
+# 回帰と相関
+## 回帰
+* xとyでどのような関係式で表すこと
+* 回帰直線: y = a + bx の式で表される
+
+## 相関
+* xとyの相互関係の強さ
+* 相関の強さは相関係数 r で表し、|r| ≦ 1 である
+* |r|が1に近いほど相関が強い
+* 異なる相関係数の値同士を比較してはいけない
+
+# 相関手法 
+## Peasonの相関係数
+* パラメトリック法
+* データが正規分布するときに使用できる
+* 二つの変数の関係を直線で表現できるかという「線形性」を評価するもの
+* 直線性を評価するので連続値であることも必須
+	* 離散値がある場合はSpearman or Kendallを
+
+ 
+## Spearmanの順位相関係数
+* ノンパラメトリック法
+* スピアマンのρ (ロー )  とも呼ばれる
+* 変数の順位についてピアソンの相関係数
+* 変数の「線形性」を仮定しない
+* 正規分布しない場合にSpearmanの順位相関係数 rs で検定する
+* Interomic analysisに用いる
+	 * Spearman correlation was used for inter-omic analysis because it detects more complicated relationships that might otherwise go undetected using other metrics, such as Pearson correlation.
+
+## Kendallの順位相関係数
+* ノンパラメトリック法
+* ケンドールのτ (タウ )  (Kendall's tau )  と呼ばれることもある
+* スピアマンとどちらを使うかは特にこれといった基準は無い
+* アイテムのペアの順序関係が2つのリストにおいてどれだけ一致しているかという指標
+
+## Spearman vs Kendall
+* 定義が異なるだけで別にどちらでもいいと考えられる
+* なじみ深いという意味ではSpearmanを使う人が多いらしい
+
+# 参考
+* [ピアソンの相関係数、Spearman(スピアマン ) の順位相関係数](http://kusuri-jouhou.com/statistics/soukan.html ) 
+* [Integrative analysis of the microbiome and metabolome of the human intestinal mucosal surface reveals exquisite inter-relationships](https://microbiomejournal.biomedcentral.com/articles/10.1186/2049-2618-1-17 ) 
+* [[統計]相関係数と順位相関係数について (2 ) : 順位相関係数](http://d.hatena.ne.jp/sleepy_yoshi/20110326/p1 ) 

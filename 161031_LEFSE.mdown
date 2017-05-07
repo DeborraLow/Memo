@@ -1,0 +1,50 @@
+# Lefse
+https://bitbucket.org/biobakery/biobakery/wiki/lefse#rst-header-lefse-bitbucket
+
+サンプルファイルを[sample input file](http://huttenhower.sph.harvard.edu/webfm_send/129)からダウンロードします。なぜか名前が129になっているので注意して下さい。このファイルの概要を書いておくと。
+
+* 行名: Phylum|Genus|...と|でレベルが区切られた菌名
+* 列名: 1行目が酸素利用性 ( 3変数 ) , 2行目が採取部位 ( 4変数 ) , 3行目が検体のID
+* 数値: Relative abundance
+
+になっています。LEfSeは2つのカテゴリー変数まで設定できるはずです。自分のファイルを入れる時はこのサンプルファイルと同じ形式にすることが必要だと思いますので、エラーが起きたときはこのファイルに戻って自分のファイルと比べてみてください。まず必要なコードをすべて書き出しておきます。初期設定さえ上手くいけば、一気に解析が終わるはずです。
+
+```
+$ cd lefse
+$ mkdir input
+
+# Downloadフォルダにある129をlefse/inputに移動
+$ mv /home/vagrant/Downloads/129 /home/vagrant/lefse/input/129
+# 名前の変更
+$ mv /home/vagrant/lefse/input/129 /home/vagrant/lefse/input/hmp_aerobiosis_small.txt
+
+$ mkdir tmp
+$ python format_input.py input/hmp_aerobiosis_small.txt tmp/hmp_aerobiosis_small.in -c 1 -s 2 -u 3 -o 1000000
+$ mkdir results
+$ python run_lefse.py tmp/hmp_aerobiosis_small.in results/hmp_aerobiosis_small.res
+$ mkdir output_figures
+$ python plot_res.py results/hmp_aerobiosis_small.res output_figures/hmp_aerobiosis_small.png
+$ python plot_cladogram.py results/hmp_aerobiosis_small.res output_figures/hmp_aerobiosis_small.cladogram.png --format png
+```
+
+# format_input.py
+上記のhmp_aerobiosis_small.txtをLEfSeフォーマットのファイルに変更します。拡張子は.inを用いるようです。オプションは現在調査中です。取り敢えずデフォルトに従っておくのが吉かと。
+
+# run_lefse.py
+.inファイルからLDAスコアを計算し、Excelデータにしてくれます。1列目に菌名があって、5列目がみなさんの大好きなP値が記載されており、これは多重検定の補正を行った後の数値です。0.05以下の項目が示されており、3列目にどの群で多いのかが示されております。
+
+# plot_res.py
+このような棒グラフが生成されます。横軸がLDAスコアになっており、群ごとに色分けされています。
+
+# plot_cladogram.py
+このようなclaogramが作成されます。
+
+
+
+
+
+
+
+
+
+

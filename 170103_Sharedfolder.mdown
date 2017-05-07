@@ -1,0 +1,51 @@
+# はじめに
+bioBakeryをインストールして一安心していたが、解析のためにはホストのOSXからbioBakeryをインストールしたUbuntuへファイルを送らなければいけない。OSXとUbuntuの共有フォルダを作成する方法があって、" ubuntu mac 共有フォルダ virtual box " で検索すると腐るほど出てきます。代表的なのは本文中でも引用させてもらった記事。だけど、自分の環境ではつまずくことが多かったのでまとめておく。
+
+
+# OSXからVirtualBox側の設定をする
+1. VirtualBoxを起動
+2. 共有フォルダのタブの文字をクリックする
+3. 出てきたウィンドウの右端のフォルダに＋が付いたアイコンをクリック
+4. 共有フォルダの場所を聞かれるのでFinderから選択 ( もしくはPATHを入力 )
+	* 自分は /Users/ユーザーネーム/biobakery/VB_Shared というフォルダを作成
+5. 
+
+# Ubuntuから共有フォルダの作成をする
+biobakeryをインストールした場合、ユーザーネームはvagrantであり、~ ( ホームディレクトリ ) は " /home/vagrant " を指すので注意。僕はUbuntu側の共有フォルダはhome/vagrant/VB_Sharedに設定した。
+
+```
+cd ~
+mkdir VB_Shared
+sudo mount -t vboxsf VB_Shared VB_Shared
+```
+
+# ログイン時の自動マウントを設定
+
+このままだとログアウトしたらまた共有フォルダが自動的にアンマウントされてしまうので、ログイン時に再度、自動でマウントしてくれるように、rc_localに記述する必要がある。この部分は下記を参照。
+
+https://gijutsutecho.wordpress.com/2015/08/17/ubuntu%E3%81%A8mac%E3%81%A8%E3%81%AE%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E5%85%B1%E6%9C%89%E6%96%B9%E6%B3%95virtual-box/
+
+### geditを起動する
+```
+sudo gedit /etc/rc.local
+```
+
+### rc.localのexit 0の前に下記を書き込む
+
+```
+mount -t vboxsf VB_Shared home/vagrant/VB_Shared
+```
+
+# ゲスト起動時に自動マウントするようにする
+
+VB_Shared VB_Shared vboxsf defaults 0 0
+```
+
+パーミッションが770で、ubuntu側から操作しづらいため、として、vboxsfグループに、ユーザーを追加しておく。biobakeryの場合、ユーザーネームがvagrantなので注意。
+
+
+```
+sudo gpasswd -a vagrant vboxsf # 
+Adding user vagrant to group vboxsf
+```
+
