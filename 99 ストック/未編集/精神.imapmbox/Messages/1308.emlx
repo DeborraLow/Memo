@@ -1,0 +1,100 @@
+4006
+Return-Path: <ikaros2001@gmail.com>
+Received: from mail-px0-f181.google.com ([209.85.216.181] [209.85.216.181])
+          by icmta108.i.softbank.jp with ESMTP
+          id <20091007143136283.HCIK.31889.icmta108.i.softbank.jp@imta108.mailsv.softbank.jp>
+          for <ikaros-2001@i.softbank.jp>; Wed, 7 Oct 2009 23:31:36 +0900
+Received: by mail-px0-f181.google.com with SMTP id 11so5145pxi.0
+        for <ikaros-2001@i.softbank.jp>; Wed, 07 Oct 2009 07:31:35 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:date:message-id:subject
+         :from:to:content-type:content-transfer-encoding;
+        bh=6pANynZBUP/YcbfjHiev1azpHLPOq9H1PJUH2FWkwU8=;
+        b=odeCnmWOXV+c3bYBOX/CVQF9q1dJQ7atF4JIRK9kuGBe9zV01ekbQPOpmkSsYRpoAE
+         3mwr47oK2kJNsEM9qSXj78fqIXlNMi6pHYUqmidfyB4NmPSi9ex84S8XN1+OrtMnQnJo
+         j5518tuSUsx18J2ncsI9Kgr64NwtB+OW2LXQ8=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        b=anEwLNR0RCc4xk7WbKprB8oa21mtLi1URRnO+diTv320TrbuRf8iZs9XbR0uGBAEjg
+         k5UbusdbmD2DAPgVpNNEZAR7T1XzpWIPcMXBenNIqn9ZaVmX0wrQlIvKz3cxupFV9DnY
+         EGe6rGdPhFAony4nHVDhXzv91ewfVMQre/HIQ=
+MIME-Version: 1.0
+Received: by 10.143.24.39 with SMTP id b39mr216261wfj.287.1254925895821; Wed, 
+	07 Oct 2009 07:31:35 -0700 (PDT)
+Date: Wed, 7 Oct 2009 23:31:35 +0900
+Message-ID: <a81c1a70910070731g16f1ff80vbd041de2b599a4d1@mail.gmail.com>
+Subject: =?ISO-2022-JP?B?GyRCRX05Zzw6RDQ3Pz5jMzIbKEIvGyRCTFFBW0AtPmMzMhsoQg==?=
+From: =?ISO-2022-JP?B?GyRCJTclUCU/JWolZyUmJVglJBsoQg==?= <ikaros2001@gmail.com>
+To: ikaros-2001@i.softbank.jp
+Content-Type: text/plain; charset=ISO-2022-JP
+Content-Transfer-Encoding: 7bit
+X-SB-Service: Virus-Checked
+
+$B!vE}9g<:D47?>c32(B/$BLQA[@->c32(B
+
+$B!&LQA[@->c32(B
+
+$BBgItJ,$OE}9g<:D4>I$H$*$=$i$/L54X78(B
+$BN><T$r$H$/$KH/>I;~$K4UJL$9$k$3$H$O:$Fq(B
+$B0[<A$J!"==J,$K2rL@$5$l$F$$$J>c32$N=8$^$j(B
+
+<$BE}9g<:D4>I(B>
+
+(a) $B9MA[2=@<!"9MA[?aF~$"$k$$$O9MA[C%<h!"9MA[EAGE!#(B
+
+(b) $B;YG[$5$l$k!"1F6A$5$l$k!"$"$k$$$ODq93$G$-$J$$$H$$$&LQA[$G!"?HBN$d;M;h$N1?F0$dFCDj$N;W9M!"9TF0$"$k$$$O463P$K4X$9$k$b$N$G$"$k!#$=$l$K2C$($FLQA[CN3P!#(B
+
+(c) $B45<T$N9TF0$K$?$($:Cm<a$r2C$($?$j!"45<T$N$3$H$rOC$79g$&88@<!"$"$k$$$O?HBN$N$"$kItJ,$+$iJ9$3$($kB>$N%?%$%W$N88@<(B
+
+(d) $B=!65E*$"$k$$$O@/<#E*?HJ,!"D6?ME*NO$dG=NO$J$I$NJ82=E*$K$=$0$o$J$$$^$C$?$/$"$j$($J$$B>$N%?%$%W$N;}B3E*LQA[(B($B$?$H$($P!"E78u$r%3%s%H%m!<%k$G$-$k$H$+1'Ch?M$H8r?.$7$F$$$k$J$I(B)$B!#(B
+
+(e) $B$I$N$h$&$J<oN`$G$"$l!";}B3E*$J883P$,!"46>p>I>u$G$O$J$$IbF0@-$dItJ,E*LQA[$"$k$$$O;}B3E*$J;YG[4QG0$rH<$C$F@8$8$k!#$"$k$$$O?t=54V$+?t%v7n4V!"KhF|;}B3E*$K@8$8$k!#(B
+
+(f) $B;W9M$NN.$l$KES@d$dA^F~$,$"$k$?$a$K!"$^$H$^$j$N$J$$!"$"$k$$$O4XO"@-$r7g$$$?OC$7J}$K$J$j!"8@8l?7:n$,$_$i$l$?$j$9$k!#(B
+
+(g) $B6=J3!">oF1;Q@*$"$k$$$O$m$&6~>I!"5q@d>I!"$*$*$S:*LB$J$I$N6[D%IB@-9TF0(B
+
+(h) $BCx$7$$L55$NO!"2qOC$NIO:$!"$*$h$S>pF0E*H?1~$NF_Kc$"$k$$$O>u67$X$N$=$0$o$J$5$J$I!"DL>o<R2qE*0z$-$3$b$j$d<R2qE*G=NODc2<$r$b$?$i$9!V1"@->I>u!W!#$=$l$OM^$&$D$d8~@:?@Lt$K$h$k$b$N$G$O$J$$$3$H!#(B
+
+(i) $B4X?4AS<:!"L\E*7gG!!"L50Y!"<+8JKWF,!"$*$h$S<R2qE*0z$-$3$b$j$H$7$F$"$i$o$l$k!"8D?ME*9TF0$N$$$/$D$+$NB&LL$N<A$,A4HLE*$KCxL@$G0l4S$7$FJQ2=$9$k(B
+
+(a)$B$+$i(B(d)$B$N$&$AL@$i$+$J#1$D$N>I>u!"L@$i$+$G$J$1$l$P#2$D0J>e$N>I>u(B
+$B$"$k$$$O(B
+(e)$B$+$i(B(h)$B$N>/$J$/$H$b#2$D$N>I>u(B
+$B$,#1%v7n0J>e$[$H$s$I$$$D$bL@$i$+$KB8:_(B
+
+($B<#NE$NM-L5$O4X78$J$/(B)$B#1%v7nL$K~$G$"$l$P5^@-E}9g<:D4MM@:?@IB@->c32$H?GCG$7!"$J$,$/$J$l$PE}9g<:D4>I$H:FJ,N`$9$Y$-(B
+
+$BL@$i$+$JM^$&$D$"$k$$$Om/>I>u$,$"$l$P!"E}9g<:D4>I$H?GCG$9$Y$-$G$O$J$$(B
+
+$BE}9g<:D4>I>u$H46>p>c32>I>u$,F1;~$K?JE8$7!"$$$:$l$,M%@*$H$b8@$($J$$$J$i$PE}9g<:D446>p>c32$H?GCG$9$Y$-(B
+
+$BL@$i$+$JG><@45$dLtJ*CfFG!"N%C&>I>u$K$"$k>l9g$bE}9g<:D4>I$H?GCG$9$Y$-$G$J$$(B
+-- 
+$B7/DECf1{IB1!(B
+$B=i4|8&=$0e!!<FED(B $BNCJ?(B
+080-4186-4649
+ikaros2001@gmail.com
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-sent</key>
+	<real>1254925895</real>
+	<key>flags</key>
+	<integer>570686593</integer>
+	<key>original-mailbox</key>
+	<string>imap://ikaros-2001@imap.softbank.jp/INBOX</string>
+	<key>remote-id</key>
+	<string>1015</string>
+	<key>sender</key>
+	<string>シバタリョウヘイ &lt;ikaros2001@gmail.com&gt;</string>
+	<key>subject</key>
+	<string>統合失調型障害/妄想性障害</string>
+	<key>to</key>
+	<string>ikaros-2001@i.softbank.jp</string>
+</dict>
+</plist>

@@ -1,0 +1,35 @@
+1210
+X-Uniform-Type-Identifier: com.apple.mail-draft
+From: =?ISO-2022-JP?B?GyRCPEZFRBsoQiAbJEJOQ0o/GyhC?= <ikaros-2001@i.softbabk.jp>
+X-Universally-Unique-Identifier: 0906595e-c240-4f45-b2d9-d74811a4d6ad
+Subject: =?ISO-2022-JP?B?GyRCQTBGLEImRiw3P0cnQ04+SRsoQg==?=
+X-Apple-Mail-Remote-Attachments: YES
+X-Apple-Windows-Friendly: 1
+Message-Id: <0025C85E-33CF-4A8F-8811-E310B6CF0065@i.softbabk.jp>
+Content-Type: text/html;
+	charset=ISO-2022-JP
+Content-Transfer-Encoding: 7bit
+Mime-Version: 1.0 (Apple Message framework v936)
+X-Apple-Base-Url: x-msg://1/
+Date: Thu, 22 Oct 2009 19:19:24 +0900
+X-Apple-Mail-Signature: 
+
+<html><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; ">$B!v(B $BA0F,B&F,7?G'CN>I(B Pick$BIB(B<br><br>$B!&A0F,B&F,MUJQ@->I!J(BFTLD$B!K(B<br>$BA0F,B&F,7?G'CN>I(B(FTD)<br>$B?J9T@-HsN.D*@-<:8l(B(PA)<br>$B0UL#@-G'CN>I(B(SD)<br><br>$BAa4|$+$i@-3JJQ2=$H<R2qE*9TF0$N>c32$,H/>I$+$i<@45$N7P2a$rDL$7$FG'$a$i$l$k(B<br><br>$B!&?GCG4p=`(B($B$9$Y$FI,MW(B)<br>$B@x9T@-$NH/>I$H4K=y$J?J9T(B<br>$B<R2qE*BP?M9TF0$NAa4|$+$i$N>c32(B<br>$BAa4|$+$i$N<+8J9TF0$NE}@)>c32(B<br>$BAa4|$+$i$N>p0UF_Kc(B<br>$BAa4|$+$i$NIB<1$N7gG!(B</body></html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-sent</key>
+	<real>1256206764</real>
+	<key>flags</key>
+	<integer>33815617</integer>
+	<key>remote-id</key>
+	<string>1000</string>
+	<key>sender</key>
+	<string>柴田 涼平 &lt;ikaros-2001@i.softbabk.jp&gt;</string>
+	<key>subject</key>
+	<string>前頭側頭型認知症</string>
+	<key>to</key>
+	<string></string>
+</dict>
+</plist>

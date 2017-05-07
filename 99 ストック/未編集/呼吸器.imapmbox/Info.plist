@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DisplayInThreadedMode</key>
+	<string>yes</string>
+	<key>IMAPMailboxUnseenCount</key>
+	<integer>0</integer>
+	<key>SearchSortDescending</key>
+	<string>YES</string>
+	<key>SearchSortOrder</key>
+	<string>rank</string>
+	<key>SortOrder</key>
+	<string>received-date</string>
+	<key>SortedDescending</key>
+	<string>NO</string>
+	<key>SupportsCustomFlags</key>
+	<string>YES</string>
+	<key>UIDNEXT</key>
+	<string>1007</string>
+	<key>UIDVALIDITY</key>
+	<string>1263068944</string>
+</dict>
+</plist>

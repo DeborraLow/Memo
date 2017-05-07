@@ -1,0 +1,63 @@
+2103      
+Return-Path: <ikaros2001@gmail.com>
+Received: from mail-pz0-f185.google.com ([209.85.222.185] [209.85.222.185])
+          by icmta101.i.softbank.jp with ESMTP
+          id <20090921175515794.SKSF.10461.icmta101.i.softbank.jp@imta101.mailsv.softbank.jp>
+          for <ikaros-2001@i.softbank.jp>; Tue, 22 Sep 2009 02:55:15 +0900
+Received: by mail-pz0-f185.google.com with SMTP id 15so148189pzk.9
+        for <ikaros-2001@i.softbank.jp>; Mon, 21 Sep 2009 10:55:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:date:message-id:subject
+         :from:to:content-type;
+        bh=GykfmLhXl3A0wkFGE/6/ged+G1hXV+GOF5Xd9H+qY+0=;
+        b=Zm3d1+eztFxmIc7O+8ulX0F6gJUX6BTEHKVHk6ulDw6U/AlNpXkN58wQDmU5Pl/bSJ
+         +4nziHRLGljud8uEsahW3jap56xjNVYFGIqCcx9D/L9qE7Ie7aiDvdguApjydiU9p2aj
+         AjC9+xQ9XR23rSD7dLwKyjvX7qEFym/d6ZOhc=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        b=uu05jUxhHF0YDgbFYXmiYYyZeCSs8s71Dl4mZgumw8ZSG+p6OY+5XUNEJZMx3u3CZk
+         ZYraL84WItpF5Q80VB/QSHzPWTCwsWFor3Vt5iaSzdHztOvdArECexRpzQ8Ndiy6edsk
+         lyxJTBbfCvDM11lkdKeYllOktEzNq0+Sfhnmw=
+MIME-Version: 1.0
+Received: by 10.142.209.21 with SMTP id h21mr322587wfg.162.1253555713330; Mon, 
+	21 Sep 2009 10:55:13 -0700 (PDT)
+Date: Tue, 22 Sep 2009 02:55:13 +0900
+Message-ID: <a81c1a70909211055i5e38d48ay6421608763d2b661@mail.gmail.com>
+Subject: A-DROP
+From: =?ISO-2022-JP?B?GyRCJTclUCU/JWolZyUmJVglJBsoQg==?= <ikaros2001@gmail.com>
+To: ikaros-2001@i.softbank.jp
+Content-Type: multipart/mixed; boundary=000e0cd32e86ffd2e904741a2ef6
+X-SB-Service: Virus-Checked
+
+
+--000e0cd32e86ffd2e904741a2ef6
+Content-Type: text/plain;
+	charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+
+
+--000e0cd32e86ffd2e904741a2ef6
+Content-Disposition: attachment;
+	filename=seijinsichu_g_05.pdf
+X-Apple-Content-Length: 847936
+Content-Type: application/pdf;
+	name=seijinsichu_g_05.pdf
+Content-Transfer-Encoding: base64
+
+
+--000e0cd32e86ffd2e904741a2ef6--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>flags</key>
+	<integer>17213621249</integer>
+	<key>original-mailbox</key>
+	<string>imap://ikaros-2001@imap.softbank.jp/medcine/ER</string>
+	<key>remote-id</key>
+	<string>1003</string>
+</dict>
+</plist>

@@ -1,0 +1,91 @@
+2496      
+Return-Path: <ikaros2001@gmail.com>
+Received: from mail-pz0-f177.google.com ([209.85.222.177] [209.85.222.177])
+          by icmta101.i.softbank.jp with ESMTP
+          id <20091014115913065.FIVZ.10461.icmta101.i.softbank.jp@imta101.mailsv.softbank.jp>
+          for <ikaros-2001@i.softbank.jp>; Wed, 14 Oct 2009 20:59:13 +0900
+Received: by mail-pz0-f177.google.com with SMTP id 7so2240385pzk.30
+        for <ikaros-2001@i.softbank.jp>; Wed, 14 Oct 2009 04:59:12 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:date:message-id:subject
+         :from:to:content-type:content-transfer-encoding;
+        bh=Nc6V3mHgO14KQpGIshm1S38/b91+k/0ZUg2fIeQ3UDE=;
+        b=RVTqcGXIFfO0e6/XAv42a8g6oQGd7e6AIUZkDlmiXAoJPRaHTR0Yo5F72Rq/freVk8
+         x/2jFUM7F+QooOWIwhC90jXIc3ReyXXw+Ch2t67ACxkMs6K3EybYKYopKXz1fjh6LrB6
+         CT3IXaZaIfD5cyaaQWYqBqE+u2JzHUffN0cWM=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        b=r8NP/MRD1jeVQtGl3V8aJ6yOSS9ILq+uRxHrI/VTULdBaxCJad1BNuBlZG+Eeu0vit
+         uy3QI9C1WD3Kf+2lkpXWS+NAfxOY9EPaD5Ll11OWyjIX5DoxTkY0Uz2g6/tiuPFwzhju
+         EjsAqotbKGC6IfazRlztRblhG6v4HRJ+wf/Hg=
+MIME-Version: 1.0
+Received: by 10.142.247.5 with SMTP id u5mr679602wfh.333.1255521552354; Wed, 
+	14 Oct 2009 04:59:12 -0700 (PDT)
+Date: Wed, 14 Oct 2009 20:59:12 +0900
+Message-ID: <a81c1a70910140459o39e90de3o38300cdb642dab42@mail.gmail.com>
+Subject: ADHD
+From: =?ISO-2022-JP?B?GyRCJTclUCU/JWolZyUmJVglJBsoQg==?= <ikaros2001@gmail.com>
+To: ikaros-2001@i.softbank.jp
+Content-Type: text/plain; charset=ISO-2022-JP
+Content-Transfer-Encoding: 7bit
+X-SB-Service: Virus-Checked
+
+＊ ADHD
+
+AD：注意欠陥
+HD：多動性障害
+
+不注意、多動がある
+衝動的
+ひとつのことに注意を持続ｄけいない
+
+じっと席に座れない
+順番を待てない
+忘れ物が多い
+
+夜尿症
+チック
+抜毛
+
+自分勝手、反抗的という印象を持たれて注意や叱責を受ける
+↓
+人間不信
+自己評価の低下
+↓
+行為障害
+不登校
+反社会的問題(覚醒剤依存など)
+
+環境整備によって改善する余地はある
+
+リタリン(メチルフェニデート)
+ナルコレプシー
+18歳以下のADHD
+依存性あり
+食欲低下
+
+コンサータ(メチルフェニデートの徐放剤)
+
+ストラテラ(アトモキセチン)
+SNRIに近い
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>date-sent</key>
+	<real>1255521552</real>
+	<key>flags</key>
+	<integer>8623750273</integer>
+	<key>original-mailbox</key>
+	<string>imap://ikaros-2001@imap.softbank.jp/INBOX</string>
+	<key>remote-id</key>
+	<string>1013</string>
+	<key>subject</key>
+	<string>ADHD</string>
+</dict>
+</plist>

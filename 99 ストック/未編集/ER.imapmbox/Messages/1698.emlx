@@ -1,0 +1,88 @@
+2930      
+Return-Path: <ikaros2001@gmail.com>
+Received: from mail-px0-f185.google.com ([209.85.216.185] [209.85.216.185])
+          by icmta108.i.softbank.jp with ESMTP
+          id <20091020054105001.NVNJ.31889.icmta108.i.softbank.jp@imta108.mailsv.softbank.jp>
+          for <ikaros-2001@i.softbank.jp>; Tue, 20 Oct 2009 14:41:05 +0900
+Received: by mail-px0-f185.google.com with SMTP id 15so3214271pxi.26
+        for <ikaros-2001@i.softbank.jp>; Mon, 19 Oct 2009 22:41:04 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:date:message-id:subject
+         :from:to:content-type:content-transfer-encoding;
+        bh=KsEHgjmUznpjgZrw/WvbQJCqy1CxOG9yTPpCNE/ehno=;
+        b=B+D53hOgO83U6Gk5rFxgEFKIIf8b5sf8x5uGKNg0qqR0EoHKGtBkeX6ZWE1pkGQ+mD
+         k5RFZaYtdp5y2k6Y84sbQPFLm0mHnw6v15XcMlfcZd674Mz+deVrmWCc8eD/o9IkOTew
+         yQxR6HTVjrfWD5Urg21ttoxdbcDmOtIL0WO2s=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        b=jggLbqqg7aIug0ZZCu8lTpbzy5UnyND56f7EymVyU3Ujj5J+hn8nrfMQ1of3FYxe0o
+         bwvPqj4TxFZMisvohysJva2+9BCufkcbp6tLYVP1TIYs5pQxAUVBOeMb+JF4/t9q+F80
+         +VQyiDJxk5JXUl6Z1xdp/G1WMnu7WKNVR8lHY=
+MIME-Version: 1.0
+Received: by 10.142.7.10 with SMTP id 10mr383535wfg.137.1256017264560; Mon, 19 
+	Oct 2009 22:41:04 -0700 (PDT)
+Date: Tue, 20 Oct 2009 14:41:04 +0900
+Message-ID: <a81c1a70910192241k384e5276s8305ae0f905b2315@mail.gmail.com>
+Subject: =?ISO-2022-JP?B?GyRCPH40fEAtO007aEtjYWMbKEI=?=
+From: =?ISO-2022-JP?B?GyRCJTclUCU/JWolZyUmJVglJBsoQg==?= <ikaros2001@gmail.com>
+To: ikaros-2001@i.softbank.jp
+Content-Type: text/plain; charset=ISO-2022-JP
+Content-Transfer-Encoding: 7bit
+X-SB-Service: Virus-Checked
+
+＊ 周期性四肢麻痺
+
+発作性の骨格筋の脱力・麻痺発作
+
+・遺伝子異常による一次性
+低K：L型Caチャネル・Naチャネル
+高K：Naチャネル
+
+・続発性の二次性
+甲状腺機能亢進症：若年アジア男性におい
+原発性アルドステロン症
+アルコール多飲
+
+顔面・嚥下・呼吸筋の麻痺は少ない
+膀胱直腸障害と感覚障害はない
+
+壊死性ミオパチーを合併するので、CPKとミオグロビンの測定を忘れずに
+
+・誘引
+
+低K性
+高炭水化物食
+精神的ストレス
+運動後安静(運動した翌朝に気づく)
+
+高K性
+慣例暴露
+運動(運動後30分〜数時間で発症)
+
+・治療
+低K性
+緊急補正が不必要：経口でグルコンサンK/アスパラK
+緊急補正が必要：sT3 500ml+KCL 10-20ml Div
+
+いずれの場合も筋力回復やK上昇の兆しが見られれば投与を直ちに中止する
+→リバウンドの高K血症をきたすことが多い
+
+予防：ダイアモックス/アルダクトンA/スローケー
+
+高K性
+カルチコール(8.5%) 5-10mlを5分かけてiv
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>flags</key>
+	<integer>8590195713</integer>
+	<key>original-mailbox</key>
+	<string>imap://ikaros-2001@imap.softbank.jp/medcine/ER</string>
+	<key>remote-id</key>
+	<string>1009</string>
+</dict>
+</plist>
