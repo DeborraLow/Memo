@@ -1,0 +1,17 @@
+# BDグルカン
+* IL-17AはC.ablcbicans感染部魚に重要である
+	* Humanにおいてもデータあり
+	* IL-17A/Fに対する自己抗体を持つ患者はS.aureusやC.albicansに易感染性
+* Dectin1 / Dectin2
+
+# Dectin1
+* 大腸で強く発現している
+* Dectin1 ko miceはDSS誘導性腸炎に耐性である
+* Dectin1 ko -> S100A8抑制 ->  Lactobacillusを増殖させる
+
+* Laminarin
+	* short chain beta glucanはDSSを抵抗させる
+* Lactobacilus murinus
+
+# FMT
+* アムステルダムプロトコール

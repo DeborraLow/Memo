@@ -1,0 +1,108 @@
+# 意味と意義
+* 英語で経路という意味のPATH
+* 経路というよりは、むしろ、コマンドを実行するプログラムのある場所
+* 簡単に=コマンドを実行するために、パスの設定をする事を『 パスを通す 』と言う
+
+```
+/usr/local/pgsql/bin/psql 
+を
+psql
+とだけ入力して実行させるには
+/usr/local/pgsql/bin
+にPATHを通すことが必要
+```
+
+# 確認方法
+```
+# どこにPATHが通っているか確認する
+echo $PATH
+```
+* 返ってきた値がコロンで区切られていれば、その全部に通っているということ
+* パスの優先度は左の方が優先される
+
+# 設定方法
+```
+# /usr/local/pgsql/bin へパスを通したい場合
+PATH=$PATH:/usr/local/pgsql/bin # $PATH: 現時点で環境変数 PATH に設定されているパス名
+
+# 複数のパスを加えるためには : で区切って指定する
+# /usr/local/bin" に加えて/usr/local/pgsql/binをパスに加えたい場合
+PATH=$PATH:/usr/local/pgsql/bin:/usr/local/mysql/bin
+
+# 環境変数 PATH を設定する
+export PATH
+
+# 上記を1行で書く
+export PATH=$PATH:/foo # :/fooは追加したいコマンド検索パス
+
+# 記述後は編集したファイルに対してsourceコマンドを実行してPATHを確定させる
+source ~/.bashrc # ~はhome directoryを表す
+source ~/.bash_profile
+```
+
+### 環境変数
+* プログラムファイルのある場所 ( ディレクトリ ) を記述したもの
+
+# ログインごとの自動設定
+* .bash_profile を編集する
+* ホームディレクトリ直下に存在
+* .bash_profile の中に PATH=$PATH:～ と export の記述をする
+
+# スクリプト
+## export
+* 環境変数を表示する
+* 環境変数を設定する
+
+```
+# 設定されている環境変数を表示する。
+export -p
+
+# $ULBという環境変数を設定する
+export ULB=/usr/local/bin
+
+# 環境変数$ULBが設定されたことを確認
+echo $ULB
+
+# どちらのコマンドでも同じ結果が出力される。
+ls /usr/local/bin
+ls $ULB
+```
+
+## unset
+* 環境変数を削除する
+```
+unset ULB #[$]は入力しなくて良い。
+echo $ULB
+```
+
+# 参考
+* [パス(PATH)の確認と設定方法は?](http://pocketstudio.jp/linux/?%A5%D1%A5%B9(PATH)%A4%CE%B3%CE%C7%A7%A4%C8%C0%DF%C4%EA%CA%FD%CB%A1%A4%CF%A1%A9)
+* [PATHを通すために環境変数の設定を理解する (Mac OS X)](http://qiita.com/soarflat/items/d5015bec37f8a8254380)
+
+___
+
+# export
+* 環境変数を表示する
+* 環境変数を設定する
+
+```
+# 設定されている環境変数を表示する。
+export -p
+
+# $ULBという環境変数を設定する
+export ULB=/usr/local/bin
+
+# 環境変数$ULBが設定されたことを確認
+echo $ULB
+
+# どちらのコマンドでも同じ結果が出力される。
+ls /usr/local/bin
+ls $ULB
+```
+
+# unset
+* 環境変数を削除する
+```
+unset ULB #[$]は入力しなくて良い。
+echo $ULB
+```

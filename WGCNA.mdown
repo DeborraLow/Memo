@@ -1,0 +1,32 @@
+WGCNA
+
+https://labs.genetics.ucla.edu/horvath/CoexpressionNetwork/Rpackages/WGCNA/faq.html
+
+
+> If one has a categorical source of variation (e.g., sex or tissue differences) and the number of samples in each category is large enough (at least 30, say) to construct a network in each category separately, it may be worthwhile to carry out a consensus module analysis (Tutorial II, see WGCNA Tutorials). 
+
+> If it is desired to construct a single network for all samples, the unwanted or uninteresting sources of large variation in the data should be adjusted for. For categorical (ordinal) factors we recommend using the function ComBat (from the package sva).
+
+
+https://www.bioconductor.org/packages/devel/bioc/vignettes/sva/inst/doc/sva.pdf
+
+# SVAパッケージとは
+SVAパッケージはbatch effectを処理するためパッケージです。
+
+
+# Batch effectとは
+
+* データ取得の際に発生する実験品質の違いがオミックスデータに与える影響
+	* サンプルグループ間での実験の系統誤差
+	* 機器
+	* 観測者・研究室
+	* サンプルを得る時期
+* 特に大規模な実験では、不可避な変動である
+* バイアスの推定と影響の緩和は、実験デザインに基づいた線形モデルによって行うことができる
+
+
+# 参考
+* [SAR News No.31](http://bukai.pharm.or.jp/bukai_kozo/SARNews/SARNews_31.pdf)
+* [情報・システム研究機構シンポジウム2012](http://www.iwlab.org/our-lab/our-staff/yy/sympo/20121109)
+
+ROITをpassした21人をミルク除去後の負荷試験をpassできるかどうか ( つまり耐性を獲得したか ) で比較すると一番、説得力のあるデータが出たので、これを採用しています。

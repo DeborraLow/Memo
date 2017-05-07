@@ -1,0 +1,120 @@
+#aVideo session
+## 1. Yanai
+* 術中にlasixを使用して内因性狭窄を検索する
+
+## 2. Yamataka, PUJs
+* PUJs Redo: high insertion
+* abberant arteryが尿管の前にある場合は、arteryの前方で吻合する
+
+## 3. 
+* 腎盂staysuture
+* 腎盂前壁のみを切開
+* 後壁をつけたままspatulate ( 尿管の前壁切開 )を行う
+* 右の場合はやりやすい
+* 尿管をつかまなくて済む
+* 左手でハサミを持つので右はやや難しい
+
+## . 硬膜外カテーテル
+* Epidural assisted defluxe
+
+## 5. Abdominoscrotal hydeocele
+* Etiologyは明らかではない
+* complete hydrocelectomy -> 全摘出は必要ないと考えている
+* 
+
+## 6. Koga
+
+# VS2
+* miniloop etractor II
+* splenectomy ->  easy to rupture -> relapse
+* 後腹膜鏡のballoonで遊走脾のポケットを作成する
+* Pocketの閉鎖はVlockで
+* Spleen scintigraphy
+
+# Oral
+* 戸谷分類1型と三管合流部に多い
+* 共通管拡張61%に起こる -> 特に合併症はない
+
+# 
+* LVR
+* LhRは意外と少ない
+* PDA RL shunt 7.8%
+* CCAMでLVRが高くなる
+* CCAM type 2 = BA
+
+* Mucus impactionがあればBAで良さそう
+* 成育は気管支造影をしている
+* 神奈川は区域切除をなるべく
+
+* CCAMは出生前診断されやすい、呼吸障害出やすい、生存率やや低い
+* BA/ILSは肺炎で発症
+* CCAMは呼吸症状
+* BAとCCAMは臨床的に異なる
+* CCAM type3が死亡例
+
+* 気管気管支は後方から出てくることが多い
+* PA slingだけなら症状が小さければtracheoplastyは必要ない
+
+* 皮弁形成喉頭気管分離
+* カニューレ挿入例が全例出欠を起こす
+* 三尖弁のhypoplasia TV/MV
+
+# Urology
+* 水腎症の原因no.1
+* VUR 20%, UVJO 10%
+* 男児に多く左側に多い
+* 50$に合併奇形
+
+* 間欠的水腎症：腎下極を栄養する交差血管が多い
+* UTD classification
+* grade1 100%, grade2 70% 自然軽快
+* grade2 30%は増悪する
+* 腎盂の拡張が2cm以下であれば腎機能低下をきたさない
+* VCUGは一応行っても、全例ではない
+* MRUは鎮静が問題
+* start from 
+* Grade4 3年間であれば腎機能低下なくても手術を
+* シンチグラフィ　4-5ヶ月で再建
+
+* 先天性泌水腎症
+* 腎瘻はその後の検査などを考えると腎瘻の方が
+* 安易な腎瘻増設は控える
+* 腎盂壁を切除するか？切除しなかったが、変わらず、t1/2は少し延長
+* ステンとは外科医の
+
+# VUR
+* NEJM 2014:19370
+* 5%がfUTI, その30%がVUR, 50%が反復, 10%がRN
+* bladder bowel dysfunction: 病的とはいかないが悪い、神経因性膀胱とは異なる
+* Pediatrics 2011, 1999
+* 複数回のUTI 2/3がVUR
+* fUTIと#UTIは相関する
+* VURは自然回復する
+* 生まれた全員に施行すると、1%がVUR、80%が自然経過
+* Normal echoでもhigh gradeを見逃す
+* 
+
+* Lap cohen volume >130ml
+* Robotic > 4age
+
+# Secondary VUR
+* BBD, 後部尿道弁, 
+* 後部尿道弁 Young classification
+* LUTD lower urinary tract dysfunction
+
+# Caese study
+* 5yoでgrade3-4で分腎機能が正常なら、この後も落ちてくる可能性は高くないのでobservationも可
+* MRIで異常血管の有無を検索してから手術
+* 3mでDMSAで腎瘢痕があっても、自然治癒の可能性があるので手術を
+* Lich Greoir法は両側に対して神経損傷を考慮して使用してはいけない
+
+# Video session
+* 肺静脈は区域間のメルクマルとなるので、最後に切る
+* 動脈を切るとdemarcationlineがわかる
+* どこまで区域切除とするのか？
+
+# 研究メモ
+* 吻合時のtensionをどう測定するか？
+
+
+I'm Ryohei SHIBATA who is a clinical fellow in Chiba university hospital. It's my great pleasure to win such an amazing award. I'm deeply appreciate my all attendings in Chiba university. And I'd like to give special thanks to my refrees. Without their comment, I couldn't win this award. Thank you very much again.

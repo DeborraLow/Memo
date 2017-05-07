@@ -1,0 +1,90 @@
+# 微生物学
+## コアグラーゼ
+* 黄色ブドウ球菌(の菌体外酵素の1つ
+* 血漿凝固作用を有する
+* 黄色ブドウ球菌は凝固した血漿で菌体を包むことにより宿主側の免疫反応を回避する
+* コアグラーゼ陽性球菌はS.aureusを指す
+* コアグラーゼ陰性球菌はS.aureus以外の菌の総称
+
+## 黄色ブドウ球菌
+* 
+
+## MRSA
+* オキサシリンに対する最小発育阻止濃度が4 μg/ml 以上である黄色ブドウ球菌をMRSAと定義
+
+## コアグラーゼ陰性ブドウ球菌
+* 表皮ブドウ球菌（Staphylococcus epidermidis )
+	 * 病院感染起因菌として代表的
+* Staphylococcus haemolyticus
+* Staphylococcus saprophyticusなど
+* CNSは莢膜多糖体を産生し、( 尿道 / 血管 ) カテーテル表面に付着しやすい
+	* バイオフィルムを形成して抗菌薬による除菌が困難となる
+* メチシリン耐性表皮ブドウ球菌（ methicillin-resistant Staphylococcus Epidermidis：MRSE ）も多く検出される
+* MRCNSと表現されることも
+
+
+MRSAの場合、好中球による貪食像の確認はMRSA定着菌と原因菌との診断に有用である。
+
+ブドウ球菌は、栄養要求性が低く、大抵の所で増殖でき、乾燥した表面でもよく生残る。30-50% の人で黄色ブドウ球菌が見つかる。
+黄色ブドウ球菌菌血症の感染源としては、まず、血管内カテーテルやデバイスからの感染が重要である。
+CNSもメシチリン耐性株はMRCNSと呼ばれ、MRSA同様にVCMを使用することとなります。CNSの外来株の約60％、院内株の80％がメシチリン耐性であることが黄色ブドウ球菌とは異なるところです。（CNSの多くが、ぺニシンやセフェムに対して無効となります。）
+
+# 診断
+* 血液培養は皮膚から2セットが原則
+	* カテーテル採血は、カテの内腔についている菌と区別できないので、できるだけとらない方がよい
+	* どうしてもという場合は1セットをカテーテルから、もう1セットを皮膚から採取
+	* カテ感染があれば、カテーテル側の血液培養のほうが数時間早く陽性になる
+* 刺入部の感染所見
+	* 特異度は高いが感度は低い
+	* 90%で陰性
+	* 刺入部に炎症所見があればカテ感染を強く示唆しますが、所見がなくてもカテ感染は全然否定できない
+* カテーテル培養
+	* ルーチンの提出は減禁
+	* CRBSIを疑い、施設で定量的な培養が可能な場合にのみ許容される
+	* 培地の上でカテーテルを転がす方法と、カテーテルの洗浄液を培養する方法がある
+
+# 治療
+## カテーテルマネジメント
+Severe sepsis
+●Hemodynamic instability
+●Endocarditis or evidence of metastatic infection
+●Erythema or exudate due to suppurative thrombophlebitis
+●Persistent bacteremia after 72 hours of antimicrobial therapy to which the organism is susceptible
+* 
+
+
+* 1st choice: VCM 40 mg / kg / day q8hrs
+* 
+* 48 ( 72 ) 時間以上、血液培養が陰性にならないことは感染性心内膜炎のリスクである ( OR = 3.69 )
+* 投与開始後3日経過しても血液培養が陰性化しない場合は合併症を伴う症例として4～6週間治療を行う
+
+The duration of antimicrobial therapy for CRBSI depends on the clinical circumstances. In general, for uncomplicated CRBSI with negative blood cultures following catheter removal or guidewire exchange and institution of appropriate antibiotic therapy, the duration of therapy is usually 10 to 14 days (day 1 is the first day on which negative blood cultures are obtained) [1]. The duration of therapy may be extended to four to six weeks in patients with recent prosthetic valve placement placed prosthetic valves, even if investigation fails to demonstrate evidence of IE.
+
+Patients with persistent bacteremia >72 hours following catheter removal should generally receive treatment for at least four to six weeks.
+
+
+
+
+# 合併症
+a)     感染性心内膜炎(IE; Infectious Endocarditis)
+
+心内膜および弁の感染症であり、臨床的には発熱(80%)、新たな心雑音(48%)、心雑音の悪化(20%)、血尿(25%)、脾腫(11%)などが見られる。起因菌としては、GPCが約80%を占め、先進国では黄色ブドウ球菌が最多の原因菌である(20~40%)。診断は臨床像、血液培養、そしてTTEもしくはTEEなどの超音波検査をふまえたDuke criteriaが利用され、感度・特異度ともに80%を上回る。IEはCRBSIの合併症で頻度が高く、また脳合併症のリスクも高めるため、黄色ブドウ球菌や、緑色レンサ球菌などIEを起こしやすい菌が血液培養で同定され、38℃以上の発熱や心雑音が聴取された場合には、IEを疑う。
+
+b)     敗血症性血栓症(Septic Thrombosis)
+
+長期カテーテル留置において合併のリスクが高く、これに伴い敗血症性PE、転移性病変も生じやすい。持続する発熱・菌血症が見られた際には、IEとSeptic thrombosisをまず疑うべきである。ただし、CRBSIに合併する血栓症は約2/3が無症候性ということである。臨床症状としては、腫脹、疼痛、しびれや紅斑や静脈の虚脱などである。診断には圧迫エコーは簡易で、広く使われている(感度>56%, 特異度>94%)。
+
+c)      骨髄炎(Osteomyelitis)
+
+骨髄・骨膜およびその周囲組織の感染症で、黄色ブドウ球菌による細菌性化膿性骨髄炎が最多である。血行性感染の好発部位としては、大腿骨・脛骨など下肢骨の骨幹端部（小児）、胸椎・腰椎（成人）があげられる。90%の症例で見られる感染部位の疼痛、圧痛に加え、熱感、紅斑などの所見が見られることもある。発熱は50%以下の症例でしか認められない。CRBSI患者で、背部痛の訴えがある場合には化膿性骨髄炎を疑う必要がある。診断はCT, MRIでの骨破壊像、膿瘍の発見である。
+
+d)     眼内炎
+
+Candida性CRBSIでの合併が多く、無症状であることが多い（他の病因による眼内炎は激しい眼痛などを伴うことが多い）。無症状性であっても、突然の視力低下、失明を起こしうるため、Candida性CRBSIでは眼科医による眼底検査が必須である。
+
+# 参考
+* [グラム染色と球菌・桿菌](http://taka-yuki.com/index.php?抗生剤の基礎知識)
+* [黄色ブドウ球菌とCNS](http://ameblo.jp/bfgkh628/entry-11226577841.html)
+* [黄色ブドウ球菌菌血症が感染性心内膜炎を合併する高リスク因子は何か](http://georgebest1969.typepad.jp)
+* [カテーテル関連血流感染の合併症](http://georgebest1969.typepad.jp/blog/2013/07/カテーテル関連血流感染の合併症.html)
+* [カテ感染（CRBSI）の診断と治療(そして予防）](http://georgebest1969.typepad.jp/blog/2014/06/シリーズ-外科医のための感染症-9-カテ感染crbsiの診断と治療そして予防.html)

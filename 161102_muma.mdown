@@ -1,0 +1,24 @@
+* The ’file’ provided has to be a matrix in .csv form
+	* the first column indicating the name of the samples
+	* the second column indicating the class of belonging of each samples
+		* e.g. treatment groups, healthy/diseased, ....
+* The header of the matrix must contain the name of each variable in the dataset
+* Before performing data preprocessing the function ’explore.data’ scans the dataset to find negative values and substitutes them with 0 values.
+* As a result, a table reporting the negative values and a table with corrected values are generated and written in the directory ’Preprocessing_Data’.
+* There for options for imputing missing values: "mean", "minimum", "half.minimum", "zero". For
+specifying the type of imput to be used, the field ’imputation’ must be turned to ’TRUE’.
+* A normalization is automatically performed on total intensity, i.e. the sum of all variables for each sample is calculated and used as normalizing factor for each variable.
+* A table reporting normalized valued is generated and written in the directory ’Preprocessing_Data’.
+* 
+Different types of ’scaling’ can be performed. ’pareto’, ’Pareto’, ’p’ or ’P’ can be used for specifying
+the Pareto scaling. ’auto’, ’Auto’, ’auto’, ’a’ or ’A’ can be used for specifying the Auto scaling
+(or unit variance scaling). ’vast’, ’Vast’, ’v’ or ’V’ can be used for specifying the vast scaling.
+’range’, ’Range’, ’r’ or ’R’ can be used for specifying the Range scaling. A table reporting the
+scaled values is generated and written in the directory ’Preprocessing_Data’. If the ’scal’ is turned
+to ’FALSE’, no scaling is performed, but only mean-centering.
+Principal component analysis is automatically performed on scaled table and a plot reporting pairwise
+representation of the first ten principal components is graphically visualized and written in the
+directory ’PCA_Data’. A statistical test is performed for identifying the best-separating couple of
+principal components and a rank of the first three couples of components is printed. This can allow
+the user to chose the best set of principal components. Finally, a geometric test is performed for
+identifying potential outliers; the result of this test is printed.

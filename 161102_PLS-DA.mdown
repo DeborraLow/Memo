@@ -1,0 +1,61 @@
+mixOmixでPLS-DA
+
+# pca(): 主成分分析を行う
+
+```
+pca(X, ncomp = 3, center = TRUE, scale = TRUE)
+```
+
+```
+> data(srbct)
+> X <- srbct$gene # The gene expression data
+> pca.srbct <- pca(X,
+                 ncomp = 3, # 第何因子まで考慮するか？
+                 center = TRUE,
+                 scale = TRUE) # 正規化の有無
+
+Eigenvalues for the first 3 principal components, see object$sdev^2: 
+     PC1      PC2      PC3 
+258.7304 248.0337 147.5536 
+
+Proportion of explained variance for the first 3 principal components, see object$explained_variance: 
+       PC1        PC2        PC3 
+0.11210154 0.10746695 0.06393136 
+
+Cumulative proportion explained variance for the first 3 principal components, see object$cum.var: 
+      PC1       PC2       PC3 
+0.1121015 0.2195685 0.2834998 
+
+```
+
+* Eigenvalues: 固有値
+
+# plotIndiv(): PCAplotを作図する
+
+```
+> as.factor(srbct$class) # 腫瘍の情報
+
+[1] EWS EWS EWS EWS EWS EWS EWS EWS EWS EWS EWS EWS EWS EWS EWS EWS EWS EWS EWS EWS EWS
+[22] EWS EWS BL  BL  BL  BL  BL  BL  BL  BL  NB  NB  NB  NB  NB  NB  NB  NB  NB  NB  NB 
+[43] NB  RMS RMS RMS RMS RMS RMS RMS RMS RMS RMS RMS RMS RMS RMS RMS RMS RMS RMS RMS RMS
+Levels: EWS BL NB RMS
+
+> col.srbct <- as.numeric(as.factor(srbct$class))
+> col.srbct[col.srbct == 1] <- 'red'
+> col.srbct[col.srbct == 2] <- 'blue'
+> col.srbct[col.srbct == 3] <- 'black'
+> col.srbct[col.srbct == 4] <- 'green'
+
+> plotIndiv(pca.srbct, 
+          col = col.srbct, # 群間での色の塗り分け
+          ind.names = FALSE,
+          pch = 16)
+```
+
+http://mixomics.org/wp-content/uploads/2012/03/Rplot13.jpeg
+
+PCAをもとにしたplotIndivではこのようなグラフが作図される。それぞれのプロットが混ざっていることがわかり、またPC1とPC2の寄与率は11%と低く、かなり多様な因子がこのデータセットの特徴に寄与しているということになる。そこで群分け情報をデータに与えることで、どの遺伝子が群を分けるのに寄与しているのかを明らかにしていく。
+
+
+
+

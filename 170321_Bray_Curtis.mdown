@@ -1,0 +1,120 @@
+今まで勉強のメモはSublimeを使ってmarkdownで書いてローカルフォルダに保存してた。まとまったものははてぶに上げるか、Googleサイトで作ったwikiに保存していたのだけど、そこまでまとめきれていないファイルが増え続けて気持ち悪かった。
+
+自分の勉強のメモの保管場所としてQiitaの限定共有投稿を使い始めた。テキストエディタとしてのQiitaは文書を書くには申し分なく、markdownもLaTeXも使えるし、後で見返す時にmarkupされているので、右側に目次が自動生成されるのも素晴らしい。身内と共有したいときもURLを送ればいいし、公開できないものは下書きに入れておけば良い。
+
+```{r}
+library(vegan)
+library(MASS)
+data(varespec)
+head(varespec)
+
+# Callvulg Empenigr Rhodtome Vaccmyrt Vaccviti Pinusylv Descflex Betupube Vacculig Diphcomp Dicrsp Dicrfusc
+# 18     0.55    11.13     0.00     0.00    17.80     0.07     0.00        0     1.60     2.07   0.00     1.62
+# 15     0.67     0.17     0.00     0.35    12.13     0.12     0.00        0     0.00     0.00   0.33    10.92
+# 24     0.10     1.55     0.00     0.00    13.47     0.25     0.00        0     0.00     0.00  23.43     0.00
+# 27     0.00    15.13     2.42     5.92    15.97     0.00     3.70        0     1.12     0.00   0.00     3.63
+# 23     0.00    12.68     0.00     0.00    23.73     0.03     0.00        0     0.00     0.00   0.00     3.42
+# 19     0.00     8.92     0.00     2.42    10.28     0.12     0.02        0     0.00     0.00   0.00     0.32
+
+dim(varespec)
+# [1] 24 44
+```
+
+## 距離行列を求める
+
+```{r}
+vare.dis <- vegdist(varespec)
+class(vare.dis)
+# [1] "dist"
+```
+
+vegdist()は生態学でdissimilarity indexを計算し距離行列を求める関数です。
+
+```{r}
+vegdist(x, # Community data matrix
+        method="bray"
+        binary=FALSE,
+        diag=FALSE,
+        upper=FALSE,
+        na.rm = FALSE) 
+```
+
+Methodには下記のような距離を使用することができます。DefaultだとCMD scaling ( Classical MultiDimensional Scaling ) となり、結果はいわゆる主座標分析 ( PCA ) となります。
+
+> method: Dissimilarity index, partial match to "manhattan", "euclidean", "canberra", "bray", "kulczynski", "jaccard", "gower", "altGower", "morisita", "horn", "mountford", "raup" , "binomial", "chao", "cao" or "mahalanobis".
+
+## isoMDSによる座標値の決定とストレスの計算
+まずはisoMDSを動かしてみます。
+
+```
+vare.mds0 <- isoMDS(vare.dis)
+# initial  value 18.026495 
+# iter   5 value 10.095483
+# final  value 10.020469 
+# converged
+
+names(vare.mds0)
+# [1] "points" "stress"
+```
+
+http://www.yokoyamalab.org/societies/bsjspringseminar13/bsjseminar13_A2_27AM.pdf
+
+関数isoMDSは、座標値($points)と最終のストレス($stress)をリスト型で返します。座標値は二次元に落とし込んだ時のX軸とY軸の値。ストレスに関しては、[コチラ](http://www.yokoyamalab.org/societies/bsjspringseminar13/bsjseminar13_A2_27PM1.pdf)に詳しいのでこれをまとめてみると、
+
+> 適合度 ( ストレス )
+> * Kruscalが提唱
+> * 距離とデータの単調関係の当てはまりの程度示す尺度
+> * この値が小さければ小さいほど、当てはまりが良いと判断する
+> * ストレスを最小とするように座標を定めることを提案
+
+ストレス値|評価
+:-:|:-:
+  0.2|悪い(poor)
+0.1|まずまず(fair)
+0.05|よい(good)
+0.025|すばらしい(excellent)
+0.00|完璧(perfect)
+
+と記載がありますので、ストレス値は高く、あまり距離とデータの単調関係の当てはまりはよくないようです。
+
+
+
+
+# Shepard plotを描いて性能を評価する
+
+
+
+```{r}
+stressplot(vare.mds0, vare.dis)
+```
+
+
+https://jp.mathworks.com/help/stats/examples/non-classical-multidimensional-scaling_ja_JP.html?requestedDomain=www.mathworks.com
+
+
+```{r}
+ordiplot(vare.mds0,
+         type = "t")
+```
+
+```{r}
+vare.mds <- metaMDS(varespec,trace = FALSE)
+vare.mds
+
+plot(vare.mds, type = "t")
+
+```
+
+```{r}
+
+
+```
+
+```{r}
+
+```
+
+
+# 参考
+* [Multivariate Analysis of Ecological Communities in R: vegan tutorial]()
+* [Rと多次元尺度法](https://www1.doshisha.ac.jp/~mjin/R/27/tajigen.html)

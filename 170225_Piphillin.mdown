@@ -1,0 +1,56 @@
+# 16S rRNA遺伝子解析の限界
+16S rRNA遺伝子解析 ( 個人的には16S rRNA gene amplicon sequencingが正しい用語だと思っています )の発達と普及によって腸内細菌叢の研究は飛躍的に進み、今まで知りえなかった腸内細菌という臓器に関する新たな知見をたくさん生み出してきました。しかし16S rRNA遺伝子解析で直接わかるのは菌の構成割合だけで、それがどう宿主に作用しているのか？ということまでは明らかにすることができません。
+
+一方、同じ細菌DNAの解析である全ゲノムショットガン法では、糞便サンプル中の全細菌遺伝子をシーケンスできるため、機能遺伝子を同定できるため、糖代謝に関わる遺伝子や脂質代謝に関わる遺伝子が、その細菌叢 ( を1つの生命体に想定して ) どのくらい含まれているかを判定することができます。例えば潰瘍性大腸炎の患者の腸内細菌は糖代謝に関わる遺伝子が少ない、などなど。これで腸内細菌叢がどう疾患や病態に関わっているのか？ということが少しわかると思います。
+
+しかし全ゲノムショットガン法のデメリットとして、シーケンス量が膨大になり、またコストも跳ね上がるため膨大なサンプル数を解析することは現実的ではないということが挙げられます。( いわゆる世界的なビッグラボでは16S rRNAをかけるようにショットガンをかけるという話もあるらしいですが… ) 
+
+https://sites.google.com/site/noteofpaediatricsurgery/in-silico/shottoganshikuensu-fa
+
+
+# 予測メタゲノム解析
+そこで登場したのが予測メタゲノム解析です。16S rRNA遺伝子のシーケンス結果からマッチする細菌の遺伝子データベースにアクセスし、有する遺伝子情報をピックアップすることで、全ゲノムショットガン法の代替とする方法で、恐らく初めての予測メタゲノム解析は2013年にMorganらがNature Biotechnologに報告した[PICRUSt](http://www.nature.com/nbt/journal/v31/n9/full/nbt.2676.html)です。
+
+PICRUStを用いた解析は多くのメタゲノム解析のメジャージャーナルに掲載された論文で採用されてきましたがいくつか問題点があり、QIIMEというアプリケーションで処理したデータしか扱えないことと、pick_closed_reference_otus.pyというQIIMEのコマンドから生成したOTUしか対象にできず、OPEN法で生成したOTUには適応できないため、菌叢解析の結果との直接比較ができなくなってしまうというところにあります。
+
+Kathrinらが2015年にBioinformaticsに報告した[Tax4Fun](http://tax4fun.gobics.de/)などもありますがデータベースがSILVAに依存していたりといろいろと制約があるようです。下記の図にPICRUStとTax4Funに必要な条件がまとめられています。
+
+![Table](http://journals.plos.org/plosone/article/figure/image?size=large&download=&id=10.1371/journal.pone.0166104.t002)
+
+# Piphillinの登場
+そこで満を持して登場した ( ? ) のが2016年にPLoS OneにIwaiらが報告した[Piphillin](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0166104)です。どうやら日本人の方のようで。上のテーブルはこの論文から引用していますが、Piphillinに必要なのは各OTUの配列が記載されたFASTAファイルとどのサンプルに各OTUがどのくらいの頻度で分離されているのか？というOTU tableのCSVファイルのみ。個人的にはずっと探していたアプリケーションでした。しかも[ウェブアプリケーション](http://www.secondgenome.com/solutions/resources/data-analysis-tools/piphillin/)があって、めちゃくちゃ簡単です。
+
+https://sites.google.com/site/noteofpaediatricsurgery/in-silico/qiime/-fasta
+
+# Piphillinの使い方
+[コチラ](http://www.secondgenome.com/solutions/resources/data-analysis-tools/piphillin/)にアクセスして、必要な項目を埋めます。
+
+
+FASTAファイルとCSVファイルはそれぞれ同ページにあるサンプルを使用します。
+
+[Download OTU Abundance Table Example File](http://www.secondgenome.com/index.php/download_file/248/267/)
+[Download Representative Sequence Example File](Download Representative Sequence Example File)
+
+自分のファイルを使用する時は、少しファイルの内容が違ったりしただけでエラーにはまることが多いので、一度じっくりとサンプルファイルを見ておくことが重要だと思います。FASTAはこんな感じ。
+
+で、submitして暫くすると登録したメールにデータがZIPファイルで送られてきます。ZIPファイルを開くとko_abund_table_unnorm.txtとpathway_abund_table_unnorm.txtが入っていると思います。ko_abundの方はKEGGに登録された各遺伝子が、pathway_abundには遺伝子をpathwayごとにまとめた結果が入っています。
+
+さて、これでPiphillin自体は終わりですが、僕は自分の手持ちのデータを解析しようとして沼にハマりましたので、そちらに関しては次回に説明します。
+
+______
+
+# はじめに
+前回の記事では予測メタゲノム解析のPiphillinの使い方をざっくり説明しました。もちろん自分の手持ちのファイルをアップロードして解析することになると思いますので、
+
+# 自分のデータをアップロードする場合の注意点
+これでかなりハマりましたので、注意して下さい。かなりアップロードできるファイル容量が小さいので場合によってはCSVファイルを分割してアップロードする必要があると思います。この際は特に注意をして下さい。
+* CSVファイルは行名にOTUXXXX、列名にSampleIDが来るように設定する
+* **アンダーバーやスペースをファイル名の中に入れない
+	* OTU名の中に入れてもだめかもしれません ( 未確認 )
+* OTUXXXXにすべてのサンプルでカウントが0のOTUがあるとエラーが起きるのでOTUtableから削除する必要があります。
+	* その際にFASTAファイルからも除去したOTUXXXXの配列を除去しておかないとエラーが起きるようです。
+
+
+
+
+

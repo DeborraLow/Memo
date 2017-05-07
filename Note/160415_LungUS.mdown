@@ -1,0 +1,41 @@
+# A-line
+* pleural lineに平行
+* 段階的に出る
+* 正常像でも出現  
+![A-line](http://blog-imgs-56-origin.fc2.com/m/0/3/m03a076d/normal.jpg)
+
+# B-line
+* Comvex probeを使用
+* 画面一番下まで元気よく出るレーザービーム状のライン
+* 正常でも1-2本出る
+* 病的なB line ( B+ line ) 
+	* 3本以上
+	* かつ
+	* B line同士の幅が7mm以内
+* 最低でも左右の肺で確認する
+* 間質性肺疾患では、肺水腫が無くともB lineが多く出る
+![B-line](http://blog-imgs-56-origin.fc2.com/m/0/3/m03a076d/b-line.jpg)
+
+# Z-line
+* B-lineに似ているが、画面途中で減衰してしまうライン
+* Z-lineは気胸でも見られますが正常でも良く出る
+
+# Sliding lung sign
+* リニアのプローブを用いるのが理想的
+* 呼吸時に生じる臓側胸膜と壁側胸膜とのズレを見ている
+* ズレがあると、このラインがうにうに動いている様に見える
+* 気胸になるとそれらの間に空気が入り込んで胸膜同士が接さなくなるため、slidingが無くなります
+* sliding lund signの消失
+	* 気胸、無呼吸、無気肺、慢性肺気腫、ARDS、炎症性の癒着
+
+# Seashore sign
+* リニアプローベのMモードで確認
+* 深呼吸してもらうとわかりやすい
+* 正常肺は肺の部分が砂浜の様に見え、動かない皮下組織が波の様に見える
+[Bモード](http://blog-imgs-56-origin.fc2.com/m/0/3/m03a076d/20121118022123192.jpg)
+[](http://blog-imgs-56-origin.fc2.com/m/0/3/m03a076d/20121118022123d8d.jpg)
+
+# 参考
+* [もなかのさいちゅう](http://m03a076d.blog.fc2.com/blog-entry-1569.html)
+* 
+

@@ -1,0 +1,61 @@
+# J. Kunisawa (NIBIOHN)
+## Diets and Commensals in the control of intestinal IgA responses
+PCs TCA and glycolysis  
+Naive B cell only TCA
+
+Check Vit B1  
+Vit B1 deficient means Stop TCA cycle  
+* PP size decreased  
+* CD138+cell fIgA didnt change  
+* Vit B1 deficiency
+	* Naive B cell death at PP
+	* Vaccine specific IgA reduced
+
+* CD11b+IgA+ PCs
+	* High proliferating activity: Cell cycle gene highly expressed
+	* Required commensal bacteria
+	* Kunisawa nature communication
+	* Dietary oil -> Palmitic acid fecal IgA production
+	* Palm oil in PA
+* peritoneal Bcell express CD11b
+* alkarigenesis inside PPs
+* mildly stimulate LPS
+
+#### Question
+* What is the function of CD11b
+* 
+
+# Y. Goto (Chiba U. /IMSUT): 
+## Intestinal epithelial a1, 2-fucosylation is regulated by commensal bacteria and immune c
+* scheme : gasteroentelogy 2008
+* ILC3 -> IL22
+* FUT2
+	* FUT2 and CD
+	* 20% of Cocagean and 15% and Japanese
+	* FUT2 <- Norovirus and Rotavirus
+
+* Commensal baceria induce epithelial fucosylaion
+	* SFB abundance in SFB
+	* SFB -> IgA, SAA, PCs
+* ILC3 required fo epithelial fucocylation
+	* ILC3 CD90 -> antibody CD90
+	* Fucocylation reduced
+* SFB -> ILC3 -> Fut2 -> Commensal bacteria
+
+* Rag-/- Tcr-/- increased fucocilation
+* Tcellb-/- much highr but tcelld-/- not high
+* CD4 tcell negatively regulate fucocylation of IEC
+* IL10-/- mmice sponteneously occur IBD
+
+# K. Honda (Keio U. /RIKEN)
+## T cell stimulatory bacteria colonizing the human oral cavity
+* Healthy fecal monoassociate mice Th17 increase
+* GF + UC fecal more increased
+* Th17 AMPC increase MNZ and VCM decrease
+* Amp positively correlated with th17 numbers in Cecal microbiota composition
+* Cecal contents -> culture
+* E.bacterium NR58
+* Colonize E.bacterium and Ecoli to IL10-/- mice -> enteritis wwa improved in E,bacterium
+* NR58 in Klebsiera pneumoniae
+
+

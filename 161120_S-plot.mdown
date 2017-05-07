@@ -1,0 +1,154 @@
+2. Principal Components Analysis (PCA)
+The foundation of all latent variable projection methods
+
+# Principal componetns Analysis
+* PCAは多次元データをScoresとLoadingsの2つに分割する
+* データはvariableとobservationsから形成されている
+	* Variables ( 変数 ) : 身長、体重、年齢、性別など
+	* Observations: 被験者A、被験者B、サンプル1、サンプル2など
+* PCAplotはScores plotとLoading plotに分けられる
+* PCAplotは多様性や傾向、外れ値を把握するのに優れている
+
+## Scores
+* Observationsをまとめたもの
+* ノイズから信号を分離する
+* パターン、傾向、クラスターを觀察する
+* Scores plot: 縦軸と横軸にloadingを取り、observations間の位置関係を説明する
+
+## Loading
+* Variablesをまとめたもの
+* Loadings plot: 縦軸と横軸にScoresを取り、variables間の位置関係を説明する
+
+_______
+
+3. Multivariate Analysis for ”omics” data
+Chapter 2 Overview of Data Tables: Principal Components Analysis (PCA)
+       
+# Notation
+```
+N = number of observations
+K = number of variables
+A = number of principal components
+ws = scaling weights
+t1, t2,..., tA scores (forming matrix T) p1, p2,..., pA loadings (forming matrix P)
+```
+
+# 多変量解析において重要なこと
+1. 適切にscaling ( 標準化 ) もしくはtransformation ( 変換 ) されていること
+2. データクリーニングが為されていること
+	* 外れ値の処理
+		* 外れ値自体は非常に興味深いが、モデルを狂わせる
+		* 必ず外れ値を同定し、適切に取り除く
+3. モデルがデータにどのくらい当てはまるか知る必要がある
+4. モデルにfitしていたとしても予測能が高まるわけではない
+	* overfitを避ける
+	* 予測能を評価することが必要
+
+# Transformations
+* データが正規分布していないのであれば適切なモデルへの変換が必要
+	* log-transformation
+
+# Scaling
+* それぞれのvariablesは異なった範囲の数字である
+	* モデリングや解釈が困難になる原因となる
+* SIMCAではUnit Variance Scalingがdefaultになっている
+
+## Unit Variance Scaling ( UV )
+* それぞれの変数を標準偏差で割る
+
+## Mean centring
+* 平均値をゼロに合わせる
+
+# Geometric interpretation
+* PC1 axisはPCAplotのvariance ( 分散 ) が最大になるように設定した軸
+* PC2 axisは2番目にvarianceが大きくなるように設定した軸
+
+
+_______
+
+How PCA Works
+
+## 
+
+_______
+
+
+S-plot
+# 
+* バイオマーカーの推定に用いる
+* データとモデルを俯瞰するのに適している
+* OPLS-DAで計測したローディングを可視化したグラフ
+	* modelled covariance ( 共分散、p1 axis ) とcorrelation ( p(corr) axis ) をパラメーターに使用
+
+* もしデータのpeak intensityに変動があれば、S-plotはS字になる
+* p1 axisはそれぞれの代謝物のmagnitudeを表す
+* p(corr)1 axisは代謝物の信頼性を表している
+	* 値は -1.0 - +1.0 になる
+
+# 解釈
+* Magnitude ( Intensity ) が小さいところに並んでいる代謝物はnoiseレベルの可能性が高い
+	* p(corr)が高くとも、その信頼性が信用できない可能性が高い
+* Biomarkerとなる物質はmagnitudeが高く、reliabilityが高い物質と考える
+
+
+# S-plotの解釈
+## p1 axis
+まず共分散について書いていきます。
+
+
+## 共分散
+* 共分散とはxの偏差とyの偏差の積の平均値である
+	 * 
+
+http://mathtrain.jp/covariance
+
+> 共分散 Cov(X,Y) は二組の対応するデータの間の関係を表す数値である。
+> データを(x1,y1),(x2,y2),⋯,(xn,yn) とおくとき,
+> Cov(X,Y)=E[(X−μX)(Y−μY)]
+
+> ただし μX は XX の平均,μY は YY の平均です。
+> Cov という記号の由来は共分散を表す英語「Covariance」です。
+> 共分散を Cov(X,Y)ではなく σXYと書く流儀もあります。
+
+### 共分散の解釈
+* 共分散は偏差の積の期待値なので
+	* 共分散が大きい(正)→ XX が大きいとき YY も大きい傾向がある
+	* 共分散が 00 に近い→ XX と YY にあまり関係はない
+	* 共分散が小さい(負)→ XX が大きいとき YY は小さい傾向がある
+
+
+## 相関係数
+```
+相関係数 = 共分散 / ( xの標準偏差 * yの標準偏差 )
+
+
+
+
+
+
+
+
+
+
+# ローディングとは？
+* ローディングという言葉の意味は多様だが、メタボロミクスの場合、因子負荷量 ( factor loading ) 」と言われているものについてまず考える
+* 主成分分析はデータの分散共分散行列の固有値問題で表される
+	* ” 固有ベクトル ” を計算し、さらにそこから主成分スコアが計算される
+	* ” 固有ベクトル ” が因子負荷量として使われている
+
+# 固有ベクトルとは？
+>「線型変換の固有ベクトルとは、その変換後に単に大きさが定数倍されるだけの影響しか受けない(倍率が1ならまったく影響を受けない)ベクトルのことである」( Wikipedia ) 
+<br>
+
+* 主成分分析の固有ベクトルは、データをautoscalingした場合に限り、主成分スコアと各代謝物質レベルとの相関係数に比例する
+* 統計や多変量解析の分野では、主成分分析の因子負荷量の定義として主成分スコアと各代謝物質レベルとの相関係数が用いられることが多い
+* ローディングの値が相対的に大きな代謝物質を選択するということはできる
+	* 何個まで取ればよいのか、また値はいくつまで着目すればよいのかは明確ではない
+* 相関係数の場合には、実務的には0.7以上で相関が高い、0.3以下だと相関が弱いだろうといった感覚によって選択することができる。
+	* 理論的にそれが正しいとは限らない
+
+
+
+# 参考
+
+* [](http://metabolomics.se/Courses/MVA/MVA%20in%20Omics_Handouts_Exercises_Solutions_Thu-Fri.pdf)

@@ -1,0 +1,53 @@
+# lung slidingの消失
+* 呼吸運動に伴う胸膜の動きを診ている
+* 正常であれば横にスライドしている像が確認できる
+	* 気胸があるとlung slidingが消失する。  
+
+[![](http://img.youtube.com/vi/hQB6v9-0tK0/0.jpg)](https://www.youtube.com/watch?v=hQB6v9-0tK0)
+
+# commet tail artifactの消失
+* 正常では胸膜から下に向かって伸びるエコー上のアーチファクトが
+* 確認できることがあるが、気胸ではこれが消失する
+	* コンソリデーション等がある場合、増強すると言われており
+	* 病的肺の診断にも用いられる。
+
+
+[![](http://img.youtube.com/vi/JMo-gwYLmF4/0.jpg)](https://www.youtube.com/watch?v=JMo-gwYLmF4)
+
+# B-line
+comet tail artifactのことをB-lineとも呼ぶことがあるが
+これは、B-lineが3本以上・間隔が7mm以内といった
+密な所見のときに間質性の疾患（肺水腫）などを疑うと
+いう場面で用いられる用語である。なお、皮下にできる
+B-line likeのものは、E-lineと呼ぶ。これは皮下気腫を意味する。
+
+
+# M-modeにおけるseashore sign（sandy pattern）の消失
+* Linear型probe
+* 身体の長軸方向に当て、肋間に映る肺実質を評価
+* M-modeでは肺実質は呼吸性変動でsandy patternになる
+	* あたかも波が打ち寄せる砂浜のように見えるためseashore signとも呼ばれる
+* 気胸ではsandy patternが消失する
+
+[![](http://img.youtube.com/vi/k6OPFZSQu7c/0.jpg)](https://www.youtube.com/watch?v=k6OPFZSQu7c)
+
+
+
+# 参考
+* [気胸の診断における超音波のメタアナリシス](http://pulmonary.exblog.jp/17476051/)
+* 
+
+# A-line
+A-lineは肺内にできるB-lineと直交する線のことで、
+１．のsea shore signと平行にできる肺内のエコーシャドウ
+のことである。正常でも観察されるが、lung slidingがあり
+増強しているときは気管支喘息やCOPDなどを疑う。
+lung slidingがないのに増強しているときは、気胸を疑う。
+
+過去にエコーによる気胸診断についてはメタアナリシスを紹介した。
+・気胸診断において超音波は感度特異度ともに高い
+今月のCHESTから、気胸診断のエコーのメタアナリシスがまた出ていた。
+Discussionにも記載されていたが、このメタアナリシスは
+多くが外傷救急における論文を引用したものなので、
+基本的に仰臥位レントゲンとエコーの話であることに注意したい。
+なお、出版バイアス等についてのDiscussionがされていない。
