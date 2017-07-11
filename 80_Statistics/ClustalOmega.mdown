@@ -1,0 +1,74 @@
+
+
+# 多様性の計算のために必要なこと
+細かいことは抜きにして多様性を計算するためには、FASTAファイルを系統樹を描くためのフォーマット.phに変換する必要があります。ちなみにQiimeを使用している場合は、Qiimeのコマンドから作成することができます。今回は手元にFASTAファイルだけがある場合の多様性の計算のための準備です。ちなみにFASTAはDNAの塩基配列やたんぱく質のアミノ酸配列のシーケンス文字列を記録したファイルです。
+
+https://sites.google.com/site/noteofpaediatricsurgery/in-silico/qiime/-fasta
+
+# Clustal Omegaとは？
+Clustal Omegaはマルチプルアラインメントを計算するプログラムです。マルチプルアライメントとはWikipediaによると
+
+http://bio-info.biz/protein/method_msa.html
+
+> 多重整列(たじゅうせいれつ、英: multiple sequence alignment)とは、DNAの塩基配列やタンパク質のアミノ酸配列について、3つ以上の配列間で対応する部分が並ぶように整列したもの、また整列すること。通常、整列する配列群は進化的類縁性を持っていることが仮定される。多重整列の結果に基づいて分子系統樹を推定することができる。
+
+https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:RPLP0_90_ClustalW_aln.gif
+
+とあります。Meta16Sにおいて、僕の理解の範囲内で解釈すると、FASTAにバラバラに収納されている各細菌の16S rRNAのシーケンス結果を、似ている配列同士で並び替えて細菌の類似度を計算し、系統樹の作成を可能にするもの、ということになるかな？と思います。
+
+# Clustal Omegaの使い方 ( < 2000 sequance )
+2000 sequanceもしくは2MBを超えていなければWebアプリケーションで処理してくれるので、コチラの方が圧倒的に楽です。
+[Clustal Omega](http://www.ebi.ac.uk/Tools/msa/clustalo/)にアクセスして、ファイルをアップロードすれば後はどうにかなるかと思います。
+
+ファイルはアップロードできないのでLocalにClusal Omegaを構築する必要がある。やり方に関してはこちらが詳しい。
+
+
+# Clustal Omegaのインストール
+逆に2000 sequanceもしくは2MBを超えるファイルはアップロードできないのでLocalにClusal Omegaを構築する必要があります。やり方に関しては[bioinformatics](http://bi.biopapyrus.net/seq/clustal-omega.html)が詳しいのですが、少なくとも僕の環境では上手くいきませんでした。
+
+http://bi.biopapyrus.net/seq/clustal-omega.html
+
+最終的にはBiostarsの[このスレッド](https://www.biostars.org/p/128261/)のAlex Reynoldsさんのコメントを参考にインストールが成功しました。
+
+https://www.biostars.org/p/128261/
+
+## 1. argtableをbrewでインストールする
+```
+brew install argtable
+```
+ちなみにargtableとはどんな機能なのかぐぐりましたがちんぷんかんぷんでした。
+
+http://argtable.sourceforge.net/
+
+>　Argtable is an ANSI C library for parsing GNU style command line options with a minimum of fuss. It enables a program's command line syntax to be defined in the source code as an array of argtable structs.
+
+## 2. Clustal Omegaをダウンロードしてコンパイルしてインストール
+```
+# Clustal Omegaの最新versionに合わせて数字を変えて下さい
+wget -qO- http://www.clustal.org/omega/clustal-omega-1.2.3.tar.gz > clustal-omega-1.2.3.tar.gz 
+tar zxvf clustal-omega-1.2.3.tar.gz
+cd clustal-omega-1.2.3
+./configure CFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib" --prefix="/usr/local"
+make
+sudo make install
+```
+これでclustal-omega-1.2.3/srcにclustaloという実行ファイルが生成されました。
+
+# Clustal Omegaの使い方
+[bioinformatics](http://bi.biopapyrus.net/seq/clustal-omega.html)がシンプルでわかりやすいです。
+
+> ダウンロードしたプログラム本体あるいは各自でコンパイルしたプログラム本体を、アラインメントしたいディレクトリに移動しておく。
+
+ことが重要なようで。clustaloを
+
+```
+# WorkingspaceのFASTAのフォルダにclustaloを移動させる
+# Workingspaceの中にfasta.faが格納されている
+mv clustal-omega-1.2.3/src/clustalo Workingspace/FASTA
+cd Workingspace/FASTA
+
+# --outfmt=phylip : phylip ( 系統樹作成ソフト )で使用できるフォーマット
+./clustalo --auto -i fasta.fa -o Phylogeny.ph --outfmt=phylip
+```
+
+これでしばらくするとPhylogeny.phが作成されていると思いますので、これをRで読み込んで以降のワークフローを続けていきます。今日はここまで。
